@@ -1,0 +1,13 @@
+@import 'styles/utils/variables';
+
+.wrapper {
+  margin: 0 auto;
+
+  &:not(:last-of-type) {
+    margin-bottom: $spacing-m * 2;
+  }
+}
+
+.contentPageComponent {
+  max-width: $max-width;
+}

@@ -1,0 +1,11 @@
+@import 'styles/utils/variables';
+
+.wrapper {
+  padding-bottom: 75%; // 4:3 aspect ratio
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  border-radius: $border-radius;
+}

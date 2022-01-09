@@ -1,3 +1,4 @@
+import ContentLoader from 'components/cms/ContentLoader';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { ParsedUrlQuery } from 'querystring';
 import { getContent } from 'lib/api/umbraco-api-server';
@@ -19,7 +20,10 @@ const CatchAllContent = ({ content, errorCode }: Props) => {
 
   return (
     <>
-
+      <ContentLoader
+        contentBlocks={contentFields?.value}
+        pageType={content.system?.contentType}
+      ></ContentLoader>
     </>
   );
 };
