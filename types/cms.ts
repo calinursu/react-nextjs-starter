@@ -28,6 +28,32 @@ export enum umbracoPageTypes {
   'virtualProductPageType',
 }
 
+export type contentButtonTypes = 'button' | 'primaryButton' | 'secondaryButton';
+
+export type contentComponents =
+  | 'accordionModuleBlock'
+  | 'blockContent'
+  | 'blockContentForLoggedInUsers'
+  | 'button'
+  | 'header'
+  | 'headline'
+  | 'image'
+  | 'mobileImage'
+  | 'paragraph'
+  | 'primaryButton'
+  | 'primaryImage'
+  | 'productCodes'
+  | 'secondaryButton'
+  | 'text'
+  | 'youtubeVideoId'
+  | 'categoryId';
+
+export type contentSettings =
+  | 'backgroundColor'
+  | 'gradientColor'
+  | 'headerSize'
+  | 'textColor';
+
 export interface IProperty {
   alias?: string;
   type?: string;
