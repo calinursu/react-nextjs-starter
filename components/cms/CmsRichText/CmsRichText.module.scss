@@ -1,0 +1,63 @@
+@import 'styles/main';
+
+.wrapper {
+  background-color: $color-white;
+  border-radius: $border-radius;
+  color: $color-dark-slate-500;
+  margin-bottom: $spacing-m * 2;
+
+  @include breakpoint(large down) {
+    padding: $spacing-m;
+  }
+
+  @include breakpoint(large) {
+    padding: $spacing-m * 2;
+  }
+
+  ol,
+  ul {
+    list-style: inherit;
+    padding-left: $spacing-m;
+    margin-bottom: $spacing-l;
+    margin-top: 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  h2 {
+    @include h2($color-dark-slate-500);
+    margin-bottom: $spacing-l;
+  }
+
+  h3 {
+    @include h3($color-dark-slate-500);
+    margin-bottom: $spacing-l;
+  }
+
+  h4 {
+    @include h4($color-dark-slate-500);
+    margin-bottom: $spacing-xs;
+  }
+
+  p {
+    line-height: 1.5rem;
+    margin-bottom: $spacing-l;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  p > small {
+    display: block;
+    font-size: 0.875rem;
+    margin-bottom: -$spacing-m;
+  }
+
+  a {
+    color: $color-blue-collar;
+    text-decoration: underline;
+  }
+}
